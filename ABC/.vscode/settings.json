@@ -1,0 +1,27 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "__hash_table": "cpp",
+        "__string": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "locale": "cpp",
+        "utility": "cpp",
+        "vector": "cpp",
+        "list": "cpp",
+        "iosfwd": "cpp",
+        "queue": "cpp",
+        "map": "cpp",
+        "__locale": "cpp",
+        "__threading_support": "cpp",
+        "__tree": "cpp",
+        "regex": "cpp",
+        "string": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp"
+    },
+    "C_Cpp.default.cppStandard": "c++17",
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ $fileName -std=c++17 -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    }
+}

@@ -4,23 +4,23 @@
 #include <cmath>
 #include <algorithm>
 #include <string>
+#include <unordered_map>
 #define myfor(i,N) for(i=0;i<N;i++)
 #define myforFL(i,f,l) for(i=f;i<l;i++)
 
 using namespace std;
 
 int main(void){
-	int K,N,A[200000],i,ans,tmp,m=0;
-	cin >> K >> N;
+	int N,i,ans;
+	string S[200000];
+	unordered_map<string, int> mp;
+	cin >> N;
 	myfor(i,N){
-		cin >> A[i];
+		cin >> S[i];
+		mp[S[i]] = 1;
 	}
-	m = K - (A[N-1] - A[0]);
-	myforFL(i,0,N-1){
-		m = max(m, A[i+1]-A[i]);
-	}
-
-	ans = K - m;
+	ans = mp.size();
 	cout << ans << endl;
+	
 	return 0;
 }

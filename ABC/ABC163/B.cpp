@@ -4,23 +4,21 @@
 #include <cmath>
 #include <algorithm>
 #include <string>
+#include <queue>
 #define myfor(i,N) for(i=0;i<N;i++)
 #define myforFL(i,f,l) for(i=f;i<l;i++)
 
 using namespace std;
 
 int main(void){
-	int K,N,A[200000],i,ans,tmp,m=0;
-	cin >> K >> N;
-	myfor(i,N){
-		cin >> A[i];
+	int N,M,a,days=0,i,ans;
+	cin >> N >> M;
+	myfor(i,M){
+		cin >> a;
+		days += a;
 	}
-	m = K - (A[N-1] - A[0]);
-	myforFL(i,0,N-1){
-		m = max(m, A[i+1]-A[i]);
-	}
-
-	ans = K - m;
+	if(days > N)ans=-1;
+	else ans = N - days; 
 	cout << ans << endl;
 	return 0;
 }

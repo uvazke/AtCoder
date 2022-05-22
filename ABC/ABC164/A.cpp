@@ -10,17 +10,9 @@
 using namespace std;
 
 int main(void){
-	int K,N,A[200000],i,ans,tmp,m=0;
-	cin >> K >> N;
-	myfor(i,N){
-		cin >> A[i];
-	}
-	m = K - (A[N-1] - A[0]);
-	myforFL(i,0,N-1){
-		m = max(m, A[i+1]-A[i]);
-	}
-
-	ans = K - m;
-	cout << ans << endl;
+	int S,W;
+	cin >> S >> W;
+	if(S <= W) cout << "unsafe" << endl;
+	else cout << "safe" << endl;
 	return 0;
 }
