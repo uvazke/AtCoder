@@ -30,7 +30,7 @@ int main(){
 		cout << A[i1] << " "  << B[i2] << " "<< C [i3] << endl;
 		m = max(cand1,max(cand2,cand3));
 		if(m == cand1)i1++;
-		else if(m == cand2)i2++;
+		else if(m == cand2)i2++232
 		else if(m == cand3)i3++;
 		cout << sum << endl;
 	} 
