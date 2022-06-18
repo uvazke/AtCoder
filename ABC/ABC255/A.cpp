@@ -13,14 +13,13 @@ using namespace std;
 
 
 int main(void) {
-	int N, M;
-	int A[200000], B[200000], C[200000];
-	int shortestPath[200000];
-	cin >> N >> M;
-	int i;
-	myfor(i, M) {
-		cin >> A[i] >> B[i] >> C[i];
+	int R, C, i;
+	int A[2][2];
+	cin >> R >> C;
+	myfor(i, 2) {
+		cin >> A[i][0] >> A[i][1];
 	}
-	
+	cout << A[R - 1][C - 1] << endl;
+
 	return 0;
 }

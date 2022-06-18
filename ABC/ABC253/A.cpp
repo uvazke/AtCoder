@@ -13,14 +13,10 @@ using namespace std;
 
 
 int main(void) {
-	int N, M;
-	int A[200000], B[200000], C[200000];
-	int shortestPath[200000];
-	cin >> N >> M;
-	int i;
-	myfor(i, M) {
-		cin >> A[i] >> B[i] >> C[i];
-	}
-	
+	int a,b,c;
+	cin >> a >> b >> c;
+	auto ans = (a >= b && b >= c) || (a <= b && b <= c);
+	cout << (ans ? "Yes" : "No") << endl;
+
 	return 0;
 }
